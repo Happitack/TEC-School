@@ -6,7 +6,13 @@ namespace ObjectOrienteretProg
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Person p1 = new Person();
+
+            p1.setName("John Johnson");
+            p1.setAge(55);
+
+            Console.WriteLine($"p1 objekt navn: {p1.getName()}");
+            Console.ReadKey();
         }
     }
 }
