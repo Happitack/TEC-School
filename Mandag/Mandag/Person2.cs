@@ -7,19 +7,15 @@ namespace ObjectOrienteretProg
     class Person2
     {
         // Fields
-        private int age { get; set; }
-        private string name { get; set; }
+        private string Fnavn { get; set; }
+        private string Enavn { get; set; }
+        private double Salery { get; set; }
 
-        public int Age
+        public static void UdskrivStatic(Person2 p)
         {
-            get { return age; }
-            set { age = value; }
-        }
-
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
+            Console.WriteLine($"Navn: {p.Fnavn} {p.Enavn} får {p.Salery: C2} i løn om måneden");
         }
     }
+
+
 }
